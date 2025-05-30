@@ -1,4 +1,5 @@
-#include <stdio.h> 
+#include <stdio.h>
+#include <stdlib.h>
 #include <locale.h>
 	
  	static int a = 0;  // variável global, alocação estática
