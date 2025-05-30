@@ -1,4 +1,5 @@
 #include <stdio.h> 
+#include <locale.h>
 	
  	static int a = 0;  // variável global, alocação estática
 
@@ -15,9 +16,11 @@
 
 int main(void)
 {
+        setlocale(LC_ALL, "utf8"); // Configura o locale para português do Brasil
 		int i;
 		for (i = 0; i < 5; i++)
 		incrementa();
+            printf("Aqui temos uma alocacao de memoria estatica\n"); // O testo foi colocado aqui para não ser repetido a cada chamada da função incrementa
     system("pause");
     return(0);
 }
